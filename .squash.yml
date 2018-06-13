@@ -62,7 +62,7 @@ deployments:
       ./stuff/Dockerfile
     context_path: ./stuff
     subdomains: test
-  subdomains_plain:
+  "subdomains plain":
     environment:
       TEST_VAL=42
     filename:
@@ -72,7 +72,7 @@ deployments:
       - test1
       - something
       - abc
-  subdomains no default:
+  subdomains_no_default:
     environment: TEST_VAL=42
     default_pr_comment: false
     filename: ./stuff/Dockerfile
